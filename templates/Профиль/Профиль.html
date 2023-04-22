@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+        header{
+        height: 72px;
+        margin-bottom: 30px;
+        }
+        .menu{
+        height: 72px;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        align-items: center;
+        justify-content: stretch;
+        }
+        .logo{
+        max-height: 70px;
+        }
+        .nav-block{
+        display: grid;
+        grid-template-columns: max-content max-content max-content;
+        justify-content: space-around;
+        }
+        .div-a{
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        color: #005AAA;
+        }
+        .enter-nav{
+        display: grid;
+        grid-template-columns: max-content max-content;
+        justify-content: center;
+        column-gap: 20px;
+        }
+        a:hover {
+        color: #005AAA;
+        text-decoration: underline;
+        }
+        .page{
+        width: 90%;
+        margin-left:auto;
+        margin-right:auto;
+        }
+        .info{
+        margin-top: 30px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        justify-content: start;
+        align-items: start;
+        }
+        .left-column{
+        height: 100%;
+        display: grid;
+        grid-template-rows: max-content max-content max-content;
+        justify-items: start;
+        align-items: center;
+        gap: 10px;
+        }
+        .div-name{
+        justify-self: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 47px;
+        }
+        .div-name h2{
+        margin: 0px;
+        }
+        .education{
+        margin-top: 30px;
+        display: grid;
+        grid-template-rows: max-content max-content;
+        gap: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 29px;
+        }
+        .education h3{
+        margin: 0px;
+        }
+        .education p{
+        margin: 0px;
+        font-size: 18px;
+        }
+        .organization{
+        display: grid;
+        grid-template-rows: max-content max-content;
+        gap: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 29px;
+        }
+        .organization h3{
+        margin: 0px;
+        }
+        .organization p{
+        margin: 0px;
+        font-size: 18px;
+        }
+        .right-column{
+        display: grid;
+        grid-template-rows: max-content max-content max-content;
+        justify-items: start;
+        align-items: center;
+        }
+        .profile-image-block{
+        justify-self: end;
+        width: 555px;
+        height: 256px;
+        display:grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid #005AAA;
+        border-radius: 50px 5px;
+        }
+        .image{
+        height: 80%;
+        -webkit-mask-image: url(media/mask.svg);
+        mask-image: url(media/mask.svg);
+        -webkit-mask-size: auto;
+        mask-size: auto;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        }
+        .image img{
+        width: 100%;
+        height: 100%;
+        }
+        .dop-info{
+        margin-top: 20px;
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        column-gap: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        }
+        .email{
+        justify-self: end;
+        }
+        .div-p{
+        }
+        .div-p p{
+        margin:0px;
+        }
+        .blue-text{
+        color: #005AAA;
+        }
+        .board-card-section{
+        margin-top: 30px;
+        }
+        .div-header{
+        width:100%;
+        height:auto;
+        display:grid;
+        grid-template-columns: repeat(2, maxmin(max-content, 1fr));
+        justyfy-content: start;
+        align-items: end;
+        grid-auto-flow: column;
+        border-bottom: 3px solid #005AAA;
+        }
+        .div-h2{
+        font-size: 47px;
+        text-indent: 1em;
+        font-family: 'Roboto', sans-serif;
+        }
+        .div-h2 h2{
+        margin: 0px;
+        }
+        .div-a{
+        margin-bottom: 10px;
+        justify-self: end;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        color: #005AAA;
+        }
+        .div-a a{
+        font-size: inherit;
+        font-family: inherit;
+        }
+        .board{
+        margin-top: 20px;
+        height: 522px;
+        display: grid;
+        grid-tempalte-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        justify-content: center;
+        align-items: start;
+        grid-auto-flow: column;
+        }
+        .card{
+        display:grid;
+        grid-template: minmax(max-content, 242px) auto / 1fr;
+        justify-content: start;
+        align-items: start;
+        width: 400px;
+        height: 522px;
+        border: 3px solid #005AAA;
+        border-radius: 50px 5px;
+        }
+        .image-block{
+        width: 400px;
+        height: 242px;
+        display:grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 3px solid #005AAA;
+        border-radius: 50px 5px;
+        }
+
+        .content{
+        width: 100%;
+        height: 100%;
+        dispaly:grid;
+        grid-template-rows: max-content auto;
+        justify-content:center;
+        align-items: start;
+        font-family: 'Roboto', sans-serif;
+        }
+        .content div-h3{
+        width: 100%;
+        }
+        .div-h3{
+        margin-left: 10px;
+        font: inherit;
+        font-size: 29px;
+        }
+        .content div-p{
+        width: 100%;
+        }
+        .div-p{
+        margin-left: 10px;
+        font: inherit;
+        font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <header>
+        <div class="menu">
+            <div class="logo">
+                <img src="media/guap.svg">
+            </div>
+            <div class="nav-block">
+                <div class="div-a">
+                    <a>Участники</a>
+                </div>
+                <div class="div-a">
+                    <a>Мероприятия</a>
+                </div>
+                <div class="div-a">
+                    <a>Публикации</a>
+                </div>
+            </div>
+            <div class="enter-nav">
+                <div class="enter-img">
+                    <img src="media/enter-vector.svg">
+                </div>
+                <div class="div-a">
+                    <a style="color:black">Вход</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="info">
+        <div class="left-column">
+            <div class="div-name">
+                <div class="div-h2">
+                    <h2>Заголовок H2</h2>
+                </div>
+            </div>
+            <div class="education">
+                <div class="div-h3">
+                    <h3>Образование</h3>
+                </div>
+                <div class="div-p">
+                    <p>Информация, информация</p>
+                </div>
+            </div>
+            <div class="organization">
+                <div class="div-h3">
+                    <h3>Организация</h3>
+                </div>
+                <div class="div-p">
+                    <p>Информация, информация</p>
+                </div>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="profile-image-block">
+                <div class="image">
+                    <img src="media/image.svg">
+                </div>
+            </div>
+            <div class="dop-info">
+                <div class="div-p email">
+                    <p>Email: </p>
+                </div>
+                <div class="div-p blue-text">
+                    <p>информация</p>
+                </div>
+                <div class="div-p">
+                    <p>Номер телефона: </p>
+                </div>
+                <div class="div-p blue-text">
+                    <p>информация</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="board-card-section">
+        <div class="div-header">
+            <div class="div-h2">
+                <h2>Последние мероприятия</h2>
+            </div>
+            <div class="div-a">
+                <a>ВСЕ МЕРОПРИЯТИЯ ></a>
+            </div>
+        </div>
+        <div class="board">
+            <div class="card">
+                <div class="image-block">
+                    <div class="image">
+                        <img src="media/image.svg">
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="div-h3">
+                        <h3>Заголовок H3</h3>
+                    </div>
+                    <div class="div-p">
+                        <p>Обычный текст. Обычный текст. Обычный текст.Обычный текст.
+                            Обычный текст. Обычный текст.Обычный текст. Обычный текст.
+                            Обычный текст.Обычный текст. Обычный текст. Обычный текст.
+                            Обычный текст. Обычный текст.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-block">
+                    <div class="image">
+                        <img src="media/image.svg">
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="div-h3">
+                        <h3>Заголовок H3</h3>
+                    </div>
+                    <div class="div-p">
+                        <p>Обычный текст. Обычный текст. Обычный текст.Обычный текст.
+                            Обычный текст. Обычный текст.Обычный текст. Обычный текст.
+                            Обычный текст.Обычный текст. Обычный текст. Обычный текст.
+                            Обычный текст. Обычный текст.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-block">
+                    <div class="image">
+                        <img src="media/image.svg">
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="div-h3">
+                        <h3>Заголовок H3</h3>
+                    </div>
+                    <div class="div-p">
+                        <p>Обычный текст. Обычный текст. Обычный текст.Обычный текст.
+                            Обычный текст. Обычный текст.Обычный текст. Обычный текст.
+                            Обычный текст.Обычный текст. Обычный текст. Обычный текст.
+                            Обычный текст. Обычный текст.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="board-card-section">
+        <div class="div-header">
+            <div class="div-h2">
+                <h2>Последние статьи</h2>
+            </div>
+            <div class="div-a">
+                <a>Все статьи ></a>
+            </div>
+        </div>
+        <div class="board">
+            <div class="card">
+                <div class="image-block">
+                    <div class="image">
+                        <img src="media/image.svg">
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="div-h3">
+                        <h3>Заголовок H3</h3>
+                    </div>
+                    <div class="div-p">
+                        <p>Обычный текст. Обычный текст. Обычный текст.Обычный текст.
+                            Обычный текст. Обычный текст.Обычный текст. Обычный текст.
+                            Обычный текст.Обычный текст. Обычный текст. Обычный текст.
+                            Обычный текст. Обычный текст.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-block">
+                    <div class="image">
+                        <img src="media/image.svg">
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="div-h3">
+                        <h3>Заголовок H3</h3>
+                    </div>
+                    <div class="div-p">
+                        <p>Обычный текст. Обычный текст. Обычный текст.Обычный текст.
+                            Обычный текст. Обычный текст.Обычный текст. Обычный текст.
+                            Обычный текст.Обычный текст. Обычный текст. Обычный текст.
+                            Обычный текст. Обычный текст.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-block">
+                    <div class="image">
+                        <img src="media/image.svg">
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="div-h3">
+                        <h3>Заголовок H3</h3>
+                    </div>
+                    <div class="div-p">
+                        <p>Обычный текст. Обычный текст. Обычный текст.Обычный текст.
+                            Обычный текст. Обычный текст.Обычный текст. Обычный текст.
+                            Обычный текст.Обычный текст. Обычный текст. Обычный текст.
+                            Обычный текст. Обычный текст.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

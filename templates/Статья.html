@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+        header{
+        height: 72px;
+        margin-bottom: 30px;
+        }
+        .menu{
+        height: 72px;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        align-items: center;
+        justify-content: stretch;
+        }
+        .logo{
+        max-height: 70px;
+        }
+        .nav-block{
+        display: grid;
+        grid-template-columns: max-content max-content max-content;
+        justify-content: space-around;
+        }
+        .div-a{
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        color: #005AAA;
+        }
+        .enter-nav{
+        display: grid;
+        grid-template-columns: max-content max-content;
+        justify-content: center;
+        column-gap: 20px;
+        }
+        a:hover {
+        color: #005AAA;
+        text-decoration: underline;
+        }
+        .page{
+        width: 90%;
+        margin-left:auto;
+        margin-right:auto;
+        }
+        .info{
+        margin-top: 30px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        justify-content: start;
+        align-items: start;
+        }
+        .left-column{
+        height: 100%;
+        display: grid;
+        grid-template-rows: max-content max-content max-content max-content;
+        justify-items: start;
+        align-items: center;
+        gap: 10px;
+        }
+        .div-name{
+        justify-self: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 47px;
+        }
+        .div-name h2{
+        margin: 0px;
+        }
+        .education{
+        margin-top: 30px;
+        display: grid;
+        grid-template-rows: max-content max-content;
+        gap: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 29px;
+        }
+        .education h3{
+        margin: 0px;
+        }
+        .education p{
+        margin: 0px;
+        font-size: 18px;
+        }
+        .organization{
+        display: grid;
+        grid-template-rows: max-content max-content;
+        gap: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 29px;
+        }
+        .organization h3{
+        margin: 0px;
+        }
+        .organization p{
+        margin: 0px;
+        font-size: 18px;
+        }
+        .right-column{
+        display: grid;
+        grid-template-rows: max-content max-content max-content;
+        justify-items: start;
+        align-items: center;
+        }
+        .profile-image-block{
+        justify-self: end;
+        width: 555px;
+        height: 256px;
+        display:grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid #005AAA;
+        border-radius: 50px 5px;
+        }
+        .image{
+        height: 80%;
+        -webkit-mask-image: url(media/mask.svg);
+        mask-image: url(media/mask.svg);
+        -webkit-mask-size: auto;
+        mask-size: auto;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        }
+        .image img{
+        width: 100%;
+        height: 100%;
+        }
+        .dop-info{
+        margin-top: 20px;
+        display: grid;
+        grid-templat-rows: 1fr 1fr 1fr;
+        row-gap: 5px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        }
+        .email{
+        justify-self: end;
+        }
+        .div-p{
+        }
+        .div-p p{
+        margin:0px;
+        }
+        .blue-text{
+        color: #005AAA;
+        }
+        .about-block{
+        font-family: 'Roboto', sans-serif;
+        font-size: 29px;
+        }
+        .about-block h3{
+        margin:0px;
+        }
+        .text{
+        font-size: 18px;
+        }
+        .contact-block{
+        display: grid;
+        grid-template-rows:max-content max-content
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        }
+        .div-h3{
+        font-size: 29px;
+        }
+        .contact-info{
+        display:grid;
+        grid-template: max-content max-content / max content max-content;
+        grid-auto-flow: column
+        }
+        .button-block{
+        margin-bottom: 30px;
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        }
+        .button{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content:start;
+        }
+        .button input{
+        height: 50px;
+        width: 156px;
+        background: #FFFFFF;
+        border-color:  #005AAA;
+        border-radius: 30px 3px ;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <header>
+        <div class="menu">
+            <div class="logo">
+                <img src="media/guap.svg">
+            </div>
+            <div class="nav-block">
+                <div class="div-a">
+                    <a>Участники</a>
+                </div>
+                <div class="div-a">
+                    <a>Мероприятия</a>
+                </div>
+                <div class="div-a">
+                    <a>Публикации</a>
+                </div>
+            </div>
+            <div class="enter-nav">
+                <div class="enter-img">
+                    <img src="media/enter-vector.svg">
+                </div>
+                <div class="div-a">
+                    <a style="color:black">Вход</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="info">
+        <div class="left-column">
+            <div class="div-name">
+                <div class="div-h2">
+                    <h2>Заголовок H2</h2>
+                </div>
+            </div>
+            <div class="education">
+                <div class="div-h3">
+                    <h3>Автор статьи</h3>
+                </div>
+                <div class="div-p">
+                    <p>Информация, информация</p>
+                </div>
+            </div>
+            <div class="organization">
+                <div class="div-h3">
+                    <h3>Дата и время публикации</h3>
+                </div>
+                <div class="div-p">
+                    <p>Информация, информация</p>
+                </div>
+            </div>
+            <div class="button-block">
+                <div class="button">
+                    <input type="submit" value="Редактировать">
+                </div>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="profile-image-block">
+                <div class="image">
+                    <img src="media/image.svg">
+                </div>
+            </div>
+            <div class="dop-info">
+                <div class="div-a blue-text">
+                    <a>Полный текст статьи ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-block">
+        <div class="div-h3">
+            <h3>О статье</h3>
+        </div>
+        <div class="text">
+            <p>
+                Обычный текст. Обычный текст. Обычный текст.Обычный текст.
+                Обычный текст. Обычный текст.Обычный текст.
+                Обычный текст. Обычный текст.Обычный текст.
+                Обычный текст. Обычный текст.Обычный текст.
+                Обычный текст.Обычный текст.Обычный текст.
+                Обычный текст.Обычный текст. Обычный текст.
+                Обычный текст.Обычный текст. Обычный текст.
+                Обычный текст.Обычный текст. Обычный текст.
+                Обычный текст.Обычный текст. Обычный текст.
+                Обычный текст.Обычный текст. Обычный текст.
+                Обычный текст.Обычный текст.Обычный текст.
+                Обычный текст. Обычный текст. Обычный текст.
+                Обычный текст. Обычный текст. Обычный текст.
+                Обычный текст. Обычный текст. Обычный текст.
+                Обычный текст. Обычный текст. Обычный текст.
+                Обычный текст. Обычный текст.Обычный текст.
+                Обычный текст.Обычный текст.Обычный текст.
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

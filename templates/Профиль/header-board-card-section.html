@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+        .div-header{
+        width:100%;
+        height:auto;
+        display:grid;
+        grid-template-columns: repeat(2, maxmin(max-content, 1fr));
+        justyfy-content: start;
+        align-items: end;
+        grid-auto-flow: column;
+        border-bottom: 3px solid #005AAA;
+        }
+        .div-h2{
+        font-size: 47px;
+        text-indent: 1em;
+        font-family: 'Roboto', sans-serif;
+        }
+        .div-h2 h2{
+        margin: 0px;
+        }
+        .div-a{
+        margin-bottom: 10px;
+        justify-self: end;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        color: #005AAA;
+        }
+        .div-a a{
+        text-transform: uppercase;
+        font-size: inherit;
+        font-family: inherit;
+        }
+    </style>
+</head>
+<body>
+<div class="div-header">
+    <div class="div-h2">
+        <h2>Заголовок H2</h2>
+    </div>
+    <div class="div-a">
+        <a>Ссылка ></a>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        header{
+        height: 72px;
+        }
+        .menu{
+        height: 72px;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        align-items: center;
+        justify-content: stretch;
+        }
+        .logo{
+        max-height: 70px;
+        }
+        .nav-block{
+        display: grid;
+        grid-template-columns: max-content max-content max-content;
+        justify-content: space-around;
+        }
+        .div-a{
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        color: #005AAA;
+        }
+        .enter-nav{
+        display: grid;
+        grid-template-columns: max-content max-content;
+        justify-content: center;
+        column-gap: 20px;
+        }
+        a:hover {
+        color: #005AAA;
+        text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="menu">
+        <div class="logo">
+            <img src="media/guap.svg">
+        </div>
+        <div class="nav-block">
+            <div class="div-a">
+                <a>Участники</a>
+            </div>
+            <div class="div-a">
+                <a>Мероприятия</a>
+            </div>
+            <div class="div-a">
+                <a>Публикации</a>
+            </div>
+        </div>
+        <div class="enter-nav">
+            <div class="enter-img">
+                <img src="media/enter-vector.svg">
+            </div>
+            <div class="div-a">
+                <a style="color:black">Вход</a>
+            </div>
+        </div>
+    </div>
+</header>
+</body>
+</html>

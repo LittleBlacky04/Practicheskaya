@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+        .page{
+        width: 90%;
+        margin-left:auto;
+        margin-right:auto;
+        }
+        .search-section{
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: #FFFFFF;
+        border: 1px solid #BDCFE4;
+        border-radius: 30px;
+        }
+        .search-block {
+        width: 95%;
+        dispaly: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        }
+        .search-block input{
+        width: 100%;
+        border: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        }
+        .view-section{
+        width:100%;
+        }
+        .view-grid{
+        width:100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-flow: dense row;
+        row-gap:20px;
+        justify-items:center;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="search-section">
+        <div class="search-block">
+            <input type="text" name="search-conference" placeholder="Я хочу найти мероприятие">
+        </div>
+    </div>
+    <div class="view-section">
+        <div class="view-grid">
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
