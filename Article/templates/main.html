@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+{% block title %}Главная{% endblock title%}
+
+{% block content %}
+
+{% block welcome-banner %}
+<div class="welcome-section">
+    <div class="table">
+        <div class="welcome-content">
+            <div class="text">
+                <h2>{{welcome_h2}}</h2>
+                <p>{{welcome_about}}</p>
+            </div>
+            <div class="button">
+                <a href="">Подробнее</a>
+            </div>
+        </div>
+        <div class="welcome-banner">
+            <img src="{% static 'image/welcome-banner.svg' %}">
+        </div>
+    </div>
+</div>
+{% endblock welcome-banner %}
+
+{% block 3-last-conference%}
+<div class="board-card-section">
+    <div class="div-header">
+        <div class="div-h2">
+            <h2>{{conference_h2}}</h2>
+        </div>
+        <div class="div-a">
+            <a>{{conference_a}}</a>
+        </div>
+    </div>
+    <div class="board">
+        {% for event in events %}
+        <div class="card">
+            <div class="image-block">
+                <div class="image">
+                    <img src="{% static 'image/image.svg' %}">
+                </div>
+            </div>
+            <div class="content">
+                <div class="div-h3">
+                    <h3>{{event.name}}</h3>
+                </div>
+                <div class="div-p">
+                    <p>{{event.about}}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock 3-last-conference %}
+
+{% block 3-last-article %}
+<div class="board-card-section">
+    <div class="div-header">
+        <div class="div-h2">
+            <h2>{{article_h2}}</h2>
+        </div>
+        <div class="div-a">
+            <a>{{article_a}}</a>
+        </div>
+    </div>
+    <div class="board">
+        {% for article in articles %}
+        <div class="card">
+            <div class="image-block">
+                <div class="image">
+                    <img src="{% static 'image/image.svg' %}">
+                </div>
+            </div>
+            <div class="content">
+                <div class="div-h3">
+                    <h3>{{article.title}}</h3>
+                </div>
+                <div class="div-p">
+                    <p>{{article.about}}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock 3-last-article %}
+
+{% endblock content %}
