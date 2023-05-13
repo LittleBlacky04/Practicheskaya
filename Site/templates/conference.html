@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+{% block title %}Мероприятия{% endblock title%}
+{% block content %}
+{% block info %}
+<div class="info">
+    <div class="left-column">
+        <div class="div-name">
+            <div class="div-h2">
+                <h2>{{event.name}}</h2>
+            </div>
+        </div>
+        <div class="education">
+            <div class="div-h3">
+                <h3>Место проведения</h3>
+            </div>
+            <div class="div-p">
+                <p>{{event.place}}</p>
+            </div>
+        </div>
+        <div class="organization">
+            <div class="div-h3">
+                <h3>Дата проведения</h3>
+            </div>
+            <div class="div-p">
+                <p>{{event.date_start}}</p>
+            </div>
+        </div>
+        <div class="button-block">
+            <div class="button">
+                <input type="submit" value="Подать заявку">
+            </div>
+        </div>
+    </div>
+    <div class="right-column">
+        <div class="profile-image-block">
+            <div class="image">
+                <img src="{{event.image.url}}">
+            </div>
+        </div>
+        <div class="dop-info">
+            <div class="div-a blue-text">
+                <a href="">Уже идут ></a>
+            </div>
+            <div class="div-a blue-text">
+                <a href="">Эти статьи точно будут ></a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock info %}
+{% block about %}
+<div class="about-block">
+    <div class="div-h3">
+        <h3>О мероприятии</h3>
+
+        <p>{{event.about}}</p>
+    </div>
+</div>
+{% endblock about %}
+{% block contact %}
+<div class="contact-block">
+    <div class="div-h3">
+        <h3>Контакты</h3>
+    </div>
+    <div class="contact-info">
+            <div class="div-h3">
+                <h3>Организаторы</h3>
+            </div>
+            {% for org in orgs%}
+            <div class="organizator">
+                <div class="div-img">
+                    <img src="{{ org.student.image.url }}">
+                </div>
+                <div class="div-p">
+                    <p>
+                        <a>{{org.first_name}} {{org.last_name}}</a>
+                    </p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock contact %}
+{% endblock content%}
